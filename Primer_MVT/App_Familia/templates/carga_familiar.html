@@ -1,0 +1,29 @@
+{% extends 'Templatepadre.html' %}
+
+    {% block contenido %}
+
+        <h2> Carga de familiares </h2>
+    
+
+    {% if myform.errors %}
+
+    <p style="color: greenyellow;"> Revisar los datos ingresados </p>
+
+    {% endif %}
+
+    <form action="/App_Familia/carga_familiares/" method="POST">{% csrf_token %}
+
+        
+
+        <table>
+
+            {{myform.as_table}}
+
+        </table>
+        <br>
+        &emsp;&emsp;&emsp;<input type="submit" value="Enviar">
+
+    </form>
+
+
+    {% endblock contenido%}

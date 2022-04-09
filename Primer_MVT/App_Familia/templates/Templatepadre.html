@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Familia</title>
+    <link rel="stylesheet" href="'https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap'">
+    <link rel="preload" href="css/css.css" as="style">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Mi familia </spam></h1>
+    </header>
+
+<div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+        <a href='{% url "Inicio" %}'> Inicio</a> &emsp;
+        <a href='{% url "Cargar_Familiar" %}'> Agregar un familiar</a> &emsp;
+        <a href='{% url "Ver_Familiares" %}'>Esta es mi familia</a> &emsp;
+ 
+    </nav>
+</div>
+    
+{% block contenido %}
+
+
+{% endblock contenido %}
+
+  <footer>
+  <p>Baigorria Juan Pablo - Curso Python Comisión 27600</p>
+
+
+  </footer>
+
+</body>

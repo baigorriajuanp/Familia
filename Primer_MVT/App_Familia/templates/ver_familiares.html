@@ -1,0 +1,12 @@
+{% extends 'Templatepadre.html' %}
+
+    {% block contenido %}
+
+        <h2> Esta es mi familia! </h2>
+            
+            {% for n in familia %}
+                <li>{{n.nombre}} {{n.apellido}} es mi {{n.relacion}}. Tiene {{n.edad}} años dado que nació el {{n.fecha_nac}}</li>
+            {% endfor %}      
+    
+        
+    {% endblock contenido %}
